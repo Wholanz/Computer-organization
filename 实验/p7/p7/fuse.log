@@ -1,0 +1,21 @@
+Determining compilation order of HDL files
+Analyzing Verilog file control.v
+Analyzing Verilog file tester.v
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.control into
+c:/users/student/desktop/p7/p7/isim/work/control.sdb
+Saving Verilog parse-tree work.tester into
+c:/users/student/desktop/p7/p7/isim/work/tester.sdb
+Saving Verilog parse-tree work.glbl into
+c:/users/student/desktop/p7/p7/isim/work/glbl.sdb
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 124828 Kb
+Fuse CPU Usage: 248 ms
+Compiling module glbl
+Compiling module control
+Compiling module tester
+FATAL_ERROR:Simulator:Fuse.cpp:164:$Id: Fuse.cpp,v 1.35 2007/11/07 21:25:47
+   sonals Exp $ - Failed to link the design   Process will terminate. For
+   technical support on this issue, please open a WebCase with this project
+   attached at http://www.xilinx.com/support.

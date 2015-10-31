@@ -1,0 +1,26 @@
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP   |         N/A|     5.911ns|     N/A|           0
+  _BUFGP                                    | HOLD    |     0.924ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net mul | SETUP   |         N/A|    33.707ns|     N/A|           0
+  ti_clk                                    | HOLD    |     0.934ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net p1/ | SETUP   |         N/A|     4.714ns|     N/A|          34
+  m0/clk_1ms                                | HOLD    |     0.369ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net p2/ | SETUP   |         N/A|     5.223ns|     N/A|         306
+  m0/clk_1ms                                | HOLD    |     0.248ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+
+
+2 constraints not met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+

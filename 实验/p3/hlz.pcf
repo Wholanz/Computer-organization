@@ -1,0 +1,31 @@
+//! **************************************************************************
+// Written by: Map K.31 on Tue Mar 18 11:15:17 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "segment<0>" LOCATE = SITE "E14" LEVEL 1;
+COMP "segment<1>" LOCATE = SITE "G13" LEVEL 1;
+COMP "segment<2>" LOCATE = SITE "N15" LEVEL 1;
+COMP "button<0>" LOCATE = SITE "M13" LEVEL 1;
+COMP "segment<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "button<1>" LOCATE = SITE "M14" LEVEL 1;
+COMP "segment<4>" LOCATE = SITE "R16" LEVEL 1;
+COMP "segment<5>" LOCATE = SITE "F13" LEVEL 1;
+COMP "segment<6>" LOCATE = SITE "N16" LEVEL 1;
+COMP "segment<7>" LOCATE = SITE "P16" LEVEL 1;
+COMP "switch<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "switch<1>" LOCATE = SITE "G12" LEVEL 1;
+COMP "switch<2>" LOCATE = SITE "H14" LEVEL 1;
+COMP "switch<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "switch<4>" LOCATE = SITE "J14" LEVEL 1;
+COMP "switch<5>" LOCATE = SITE "J13" LEVEL 1;
+COMP "switch<6>" LOCATE = SITE "K14" LEVEL 1;
+COMP "anode<0>" LOCATE = SITE "D14" LEVEL 1;
+COMP "anode<1>" LOCATE = SITE "G14" LEVEL 1;
+COMP "anode<2>" LOCATE = SITE "F14" LEVEL 1;
+COMP "anode<3>" LOCATE = SITE "E13" LEVEL 1;
+COMP "o_zf" LOCATE = SITE "K12" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

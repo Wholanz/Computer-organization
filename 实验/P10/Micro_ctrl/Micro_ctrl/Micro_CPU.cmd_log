@@ -1,0 +1,15 @@
+xst -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -ifn "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_CPU.xst" -ofn "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_CPU.syr"
+xst -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -ifn "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_CPU.xst" -ofn "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "Micro_CPU.ngc" Micro_CPU.ngd
+xst -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -ifn "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_CPU.xst" -ofn "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "Micro_CPU.ngc" Micro_CPU.ngd
+map -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o Micro_CPU_map.ncd Micro_CPU.ngd Micro_CPU.pcf
+par -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -w -intstyle ise -ol std -t 1 Micro_CPU_map.ncd Micro_CPU.ncd Micro_CPU.pcf
+trce -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -e 3 -s 4 -xml Micro_CPU Micro_CPU.ncd -o Micro_CPU.twr Micro_CPU.pcf
+bitgen -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -f Micro_CPU.ut Micro_CPU.ncd
+xst -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -ifn "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_CPU.xst" -ofn "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "Micro_CPU.ngc" Micro_CPU.ngd
+map -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o Micro_CPU_map.ncd Micro_CPU.ngd Micro_CPU.pcf
+par -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -w -intstyle ise -ol std -t 1 Micro_CPU_map.ncd Micro_CPU.ncd Micro_CPU.pcf
+trce -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -e 3 -s 4 -xml Micro_CPU Micro_CPU.ncd -o Micro_CPU.twr Micro_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/Micro_ctrl/Micro_ctrl/Micro_ctrl.ise" -intstyle ise -f Micro_CPU.ut Micro_CPU.ncd

@@ -1,0 +1,32 @@
+//! **************************************************************************
+// Written by: Map K.31 on Tue Mar 25 12:14:50 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "segment<0>" LOCATE = SITE "E14" LEVEL 1;
+COMP "segment<1>" LOCATE = SITE "G13" LEVEL 1;
+COMP "segment<2>" LOCATE = SITE "N15" LEVEL 1;
+COMP "segment<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "segment<4>" LOCATE = SITE "R16" LEVEL 1;
+COMP "segment<5>" LOCATE = SITE "F13" LEVEL 1;
+COMP "segment<6>" LOCATE = SITE "N16" LEVEL 1;
+COMP "segment<7>" LOCATE = SITE "P16" LEVEL 1;
+COMP "led" LOCATE = SITE "K12" LEVEL 1;
+COMP "choose<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "choose<1>" LOCATE = SITE "G12" LEVEL 1;
+COMP "anode<0>" LOCATE = SITE "D14" LEVEL 1;
+COMP "anode<1>" LOCATE = SITE "G14" LEVEL 1;
+COMP "anode<2>" LOCATE = SITE "F14" LEVEL 1;
+COMP "anode<3>" LOCATE = SITE "E13" LEVEL 1;
+COMP "reset" LOCATE = SITE "M14" LEVEL 1;
+COMP "add_button" LOCATE = SITE "L14" LEVEL 1;
+PIN add_button_pin<0> = BEL "add_button" PINNAME PAD;
+PIN "add_button_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "cal" LOCATE = SITE "M13" LEVEL 1;
+PIN cal_pin<0> = BEL "cal" PINNAME PAD;
+PIN "cal_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "disp_switch" LOCATE = SITE "K13" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

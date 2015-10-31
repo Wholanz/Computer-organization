@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/vaio/Desktop/p6/p6/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/vaio/Desktop/p6/p6/xst"
+elaborate
+-ifn aluc.prj
+-ifmt mixed

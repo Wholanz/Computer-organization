@@ -1,0 +1,238 @@
+Release 10.1 par K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+ROOM509-31::  Tue Mar 04 11:57:47 2014
+
+par -w -intstyle ise -ol std -t 1 lab2_map.ncd lab2.ncd lab2.pcf 
+
+
+Constraints file: lab2.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx\10.1\ISE.
+   "lab2" is an NCD, version 3.2, device xc3s200, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. The PAR timing summary will list the performance achieved for each clock. Note: For
+   the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high". For a
+   balance between the fastest runtime and best performance, set the effort level to "med".
+
+Device speed data version:  "PRODUCTION 1.39 2008-01-09".
+
+
+Device Utilization Summary:
+
+   Number of BUFGMUXs                        1 out of 8      12%
+   Number of External IOBs                  33 out of 173    19%
+      Number of LOCed IOBs                  33 out of 33    100%
+
+   Number of Slices                        143 out of 1920    7%
+      Number of SLICEMs                      0 out of 960     0%
+
+
+
+Overall effort level (-ol):   Standard 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard 
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:98996c) REAL time: 1 secs 
+
+Phase 2.7
+Phase 2.7 (Checksum:1312cfe) REAL time: 1 secs 
+
+Phase 3.31
+Phase 3.31 (Checksum:1c9c37d) REAL time: 1 secs 
+
+Phase 4.2
+
+.
+Phase 4.2 (Checksum:26259fc) REAL time: 1 secs 
+
+Phase 5.8
+.....
+.
+Phase 5.8 (Checksum:99d8c3) REAL time: 1 secs 
+
+Phase 6.5
+Phase 6.5 (Checksum:39386fa) REAL time: 1 secs 
+
+Phase 7.18
+Phase 7.18 (Checksum:42c1d79) REAL time: 2 secs 
+
+Phase 8.5
+Phase 8.5 (Checksum:4c4b3f8) REAL time: 2 secs 
+
+REAL time consumed by placer: 2 secs 
+CPU  time consumed by placer: 2 secs 
+Writing design to file lab2.ncd
+
+
+Total REAL time to Placer completion: 2 secs 
+Total CPU time to Placer completion: 2 secs 
+
+Starting Router
+
+Phase 1: 720 unrouted;       REAL time: 3 secs 
+
+Phase 2: 623 unrouted;       REAL time: 3 secs 
+
+Phase 3: 126 unrouted;       REAL time: 3 secs 
+
+Phase 4: 126 unrouted; (36153)      REAL time: 3 secs 
+
+Phase 5: 147 unrouted; (3)      REAL time: 3 secs 
+
+Phase 6: 0 unrouted; (3517)      REAL time: 3 secs 
+
+Phase 7: 0 unrouted; (3517)      REAL time: 3 secs 
+
+Updating file: lab2.ncd with current fully routed design.
+
+Phase 8: 0 unrouted; (3341)      REAL time: 4 secs 
+
+Phase 9: 0 unrouted; (3323)      REAL time: 4 secs 
+
+Phase 10: 0 unrouted; (3323)      REAL time: 4 secs 
+
+Phase 11: 0 unrouted; (1993)      REAL time: 4 secs 
+
+WARNING:Route:455 - CLK Net:I2/clk_500ms may have excessive skew because 
+      4 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:I1/m0/clk_1ms may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:I1111/m0/clk_1ms may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:I11/m0/clk_1ms may have excessive skew because 
+      4 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:I11111/m0/clk_1ms may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:I11/pbreg may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:I1/pbreg may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:I1111/pbreg may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:I11111/pbreg may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 4 secs 
+Total CPU time to Router completion: 4 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP |      BUFGMUX0| No   |   67 |  0.002     |  1.012      |
++---------------------+--------------+------+------+------------+-------------+
+|            I1/pbreg |         Local|      |    3 |  0.393     |  1.815      |
++---------------------+--------------+------+------+------------+-------------+
+|           I11/pbreg |         Local|      |    3 |  0.000     |  1.447      |
++---------------------+--------------+------+------+------------+-------------+
+|         I1111/pbreg |         Local|      |    3 |  0.364     |  1.942      |
++---------------------+--------------+------+------+------------+-------------+
+|        I11111/pbreg |         Local|      |    3 |  0.383     |  1.543      |
++---------------------+--------------+------+------+------------+-------------+
+|   I11111/m0/clk_1ms |         Local|      |    6 |  0.087     |  2.533      |
++---------------------+--------------+------+------+------------+-------------+
+|        I2/clk_500ms |         Local|      |    5 |  0.715     |  2.382      |
++---------------------+--------------+------+------+------------+-------------+
+|       I1/m0/clk_1ms |         Local|      |    6 |  0.016     |  2.531      |
++---------------------+--------------+------+------+------------+-------------+
+|    I1111/m0/clk_1ms |         Local|      |    6 |  0.006     |  0.913      |
++---------------------+--------------+------+------+------------+-------------+
+|      I11/m0/clk_1ms |         Local|      |    6 |  0.566     |  1.479      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0
+
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no
+   requested value.
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+------------------------------------------------------------------------------------------------------
+  Constraint                                |  Check  | Worst Case |  Best Case | Timing |   Timing   
+                                            |         |    Slack   | Achievable | Errors |    Score   
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP   |         N/A|     6.920ns|     N/A|           0
+  _BUFGP                                    | HOLD    |     0.891ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net I1/ | SETUP   |         N/A|     4.445ns|     N/A|           0
+  pbreg                                     | HOLD    |     0.965ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net I11 | SETUP   |         N/A|     4.432ns|     N/A|           0
+  /pbreg                                    | HOLD    |     1.017ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net I11 | SETUP   |         N/A|     4.706ns|     N/A|           0
+  11/pbreg                                  | HOLD    |     0.830ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net I11 | SETUP   |         N/A|     5.040ns|     N/A|           0
+  111/pbreg                                 | HOLD    |     0.357ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net I11 | SETUP   |         N/A|     5.700ns|     N/A|           0
+  111/m0/clk_1ms                            | HOLD    |     0.945ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net I2/ | SETUP   |         N/A|     1.965ns|     N/A|           0
+  clk_500ms                                 | HOLD    |     0.897ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net I1/ | SETUP   |         N/A|     4.725ns|     N/A|           0
+  m0/clk_1ms                                | HOLD    |     0.848ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net I11 | SETUP   |         N/A|     4.596ns|     N/A|           0
+  11/m0/clk_1ms                             | HOLD    |     0.825ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net I11 | SETUP   |         N/A|     4.963ns|     N/A|           0
+  /m0/clk_1ms                               | HOLD    |     0.314ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 7 secs 
+Total CPU time to PAR completion: 5 secs 
+
+Peak Memory Usage:  140 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 9
+Number of info messages: 2
+
+Writing design to file lab2.ncd
+
+
+
+PAR done!

@@ -1,0 +1,206 @@
+Release 10.1 Map K.31 (nt)
+Xilinx Mapping Report File for Design 'lab2'
+
+Design Information
+------------------
+Command Line   : map -ise D:/3120102116/p2/hlz/hlz.ise -intstyle ise -p
+xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o lab2_map.ncd lab2.ngd lab2.pcf 
+Target Device  : xc3s200
+Target Package : ft256
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.46 $
+Mapped Date    : Tue Mar 04 11:57:39 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:           176 out of   3,840    4%
+  Number of 4 input LUTs:               100 out of   3,840    2%
+Logic Distribution:
+  Number of occupied Slices:            143 out of   1,920    7%
+    Number of Slices containing only related logic:     143 out of     143 100%
+    Number of Slices containing unrelated logic:          0 out of     143   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         224 out of   3,840    5%
+    Number used as logic:               100
+    Number used as a route-thru:        124
+  Number of bonded IOBs:                 33 out of     173   19%
+  Number of BUFGMUXs:                     1 out of       8   12%
+
+Peak Memory Usage:  164 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |             | Strength | Rate |              |          | Delay    |
++----------------------------------------------------------------------------------------------------------------------------------------+
+| button<0>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| button<1>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| button<2>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| button<3>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| clk                                | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| digit_anode<0>                     | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| digit_anode<1>                     | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| digit_anode<2>                     | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| digit_anode<3>                     | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led<0>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led<1>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led<2>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led<3>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led<4>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led<5>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led<6>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led<7>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<0>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<1>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<2>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<3>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<4>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<5>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<6>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<7>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| switch<0>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<1>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<2>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<3>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<4>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<5>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<6>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| switch<7>                          | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
++----------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 14 - Utilization by Hierarchy
+-------------------------------------
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| lab2/              |           | 90/225        | 16/176        | 140/224       | 0/0           | 0/0       | 0/0       | 1/1   | 0/0   | lab2               |
+| +I1                |           | 8/21          | 8/25          | 6/13          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab2/I1            |
+| ++m0               |           | 13/13         | 17/17         | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab2/I1/m0         |
+| +I11               |           | 8/21          | 8/25          | 6/13          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab2/I11           |
+| ++m0               |           | 13/13         | 17/17         | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab2/I11/m0        |
+| +I1111             |           | 8/21          | 8/25          | 6/13          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab2/I1111         |
+| ++m0               |           | 13/13         | 17/17         | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab2/I1111/m0      |
+| +I11111            |           | 8/21          | 8/25          | 6/13          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab2/I11111        |
+| ++m0               |           | 13/13         | 17/17         | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab2/I11111/m0     |
+| +I2                |           | 23/23         | 32/32         | 9/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab2/I2            |
+| +I3                |           | 28/28         | 28/28         | 23/23         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | lab2/I3            |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

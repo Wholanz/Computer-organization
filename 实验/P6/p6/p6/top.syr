@@ -1,0 +1,676 @@
+Release 11.1 - xst L.33 (nt64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : top.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "adder_32bits.v" in library work
+Module <adder_32bits> compiled
+Compiling verilog file "RegFile.v" in library work
+Module <adder_1bit> compiled
+Compiling verilog file "aluc.v" in library work
+Module <RegFile> compiled
+Compiling verilog file "alu.v" in library work
+Module <aluc> compiled
+Compiling verilog file "top.v" in library work
+Module <alu> compiled
+Module <top> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top> in library <work>.
+
+Analyzing hierarchy for module <RegFile> in library <work>.
+
+Analyzing hierarchy for module <alu> in library <work>.
+
+Analyzing hierarchy for module <aluc> in library <work>.
+
+Analyzing hierarchy for module <adder_32bits> in library <work> with parameters.
+	size = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <adder_1bit> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top>.
+Module <top> is correct for synthesis.
+ 
+Analyzing module <RegFile> in library <work>.
+Module <RegFile> is correct for synthesis.
+ 
+Analyzing module <alu> in library <work>.
+WARNING:Xst:883 - "alu.v" line 43: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "alu.v" line 44: Ignored duplicate item in case statement. 
+Module <alu> is correct for synthesis.
+ 
+Analyzing module <adder_32bits> in library <work>.
+	size = 32'sb00000000000000000000000000100000
+Module <adder_32bits> is correct for synthesis.
+ 
+Analyzing module <adder_1bit> in library <work>.
+Module <adder_1bit> is correct for synthesis.
+ 
+Analyzing module <aluc> in library <work>.
+Module <aluc> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <RegFile>.
+    Related source file is "RegFile.v".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <Adat>.
+    Found 32-bit register for signal <Bdat>.
+    Found 32-bit 32-to-1 multiplexer for signal <Adat$mux0000> created at line 89.
+    Found 32-bit 32-to-1 multiplexer for signal <Bdat$mux0000> created at line 124.
+    Found 32-bit register for signal <reg1>.
+    Found 32-bit register for signal <reg10>.
+    Found 32-bit register for signal <reg11>.
+    Found 32-bit register for signal <reg12>.
+    Found 32-bit register for signal <reg13>.
+    Found 32-bit register for signal <reg14>.
+    Found 32-bit register for signal <reg15>.
+    Found 32-bit register for signal <reg16>.
+    Found 32-bit register for signal <reg17>.
+    Found 32-bit register for signal <reg18>.
+    Found 32-bit register for signal <reg19>.
+    Found 32-bit register for signal <reg2>.
+    Found 32-bit register for signal <reg20>.
+    Found 32-bit register for signal <reg21>.
+    Found 32-bit register for signal <reg22>.
+    Found 32-bit register for signal <reg23>.
+    Found 32-bit register for signal <reg24>.
+    Found 32-bit register for signal <reg25>.
+    Found 32-bit register for signal <reg26>.
+    Found 32-bit register for signal <reg27>.
+    Found 32-bit register for signal <reg28>.
+    Found 32-bit register for signal <reg29>.
+    Found 32-bit register for signal <reg3>.
+    Found 32-bit register for signal <reg30>.
+    Found 32-bit register for signal <reg31>.
+    Found 32-bit register for signal <reg32>.
+    Found 32-bit register for signal <reg4>.
+    Found 32-bit register for signal <reg5>.
+    Found 32-bit register for signal <reg6>.
+    Found 32-bit register for signal <reg7>.
+    Found 32-bit register for signal <reg8>.
+    Found 32-bit register for signal <reg9>.
+    Summary:
+	inferred 1088 D-type flip-flop(s).
+	inferred  64 Multiplexer(s).
+Unit <RegFile> synthesized.
+
+
+Synthesizing Unit <aluc>.
+    Related source file is "aluc.v".
+WARNING:Xst:647 - Input <switch<6:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <result3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <or_result2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <aluc> synthesized.
+
+
+Synthesizing Unit <adder_1bit>.
+    Related source file is "adder_32bits.v".
+    Found 1-bit xor3 for signal <s>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <adder_1bit> synthesized.
+
+
+Synthesizing Unit <adder_32bits>.
+    Related source file is "adder_32bits.v".
+    Found 1-bit xor2 for signal <Bo$xor0000> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0001> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0002> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0003> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0004> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0005> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0006> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0007> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0008> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0009> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0010> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0011> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0012> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0013> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0014> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0015> created at line 31.
+Unit <adder_32bits> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "alu.v".
+WARNING:Xst:646 - Signal <co> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 32-bit latch for signal <disp_code>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 32-bit comparator less for signal <disp_code$cmp_lt0000> created at line 47.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "top.v".
+WARNING:Xst:647 - Input <I<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <I<10:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <zero> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 34
+ 32-bit register                                       : 34
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 2
+ 32-bit 32-to-1 multiplexer                            : 2
+# Xors                                                 : 48
+ 1-bit xor2                                            : 16
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1088
+ Flip-Flops                                            : 1088
+# Latches                                              : 1
+ 32-bit latch                                          : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 64
+ 1-bit 32-to-1 multiplexer                             : 64
+# Xors                                                 : 48
+ 1-bit xor2                                            : 16
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Optimizing unit <RegFile> ...
+
+Optimizing unit <adder_32bits> ...
+
+Optimizing unit <alu> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 59.
+Latch m1/disp_code_29 has been replicated 2 time(s)
+Latch m1/disp_code_30 has been replicated 2 time(s)
+Latch m1/disp_code_31 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1088
+ Flip-Flops                                            : 1088
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 130
+
+Cell Usage :
+# BELS                             : 2224
+#      BUF                         : 2
+#      INV                         : 1
+#      LUT2                        : 53
+#      LUT3                        : 1050
+#      LUT3_D                      : 8
+#      LUT4                        : 94
+#      LUT4_D                      : 7
+#      LUT4_L                      : 15
+#      MUXCY                       : 32
+#      MUXF5                       : 513
+#      MUXF6                       : 256
+#      MUXF7                       : 128
+#      MUXF8                       : 64
+#      VCC                         : 1
+# FlipFlops/Latches                : 1126
+#      FD                          : 64
+#      FDE_1                       : 1024
+#      LD                          : 38
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 115
+#      IBUF                        : 19
+#      OBUF                        : 96
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                     1203  out of   1920    62%  
+ Number of Slice Flip Flops:           1123  out of   3840    29%  
+ Number of 4 input LUTs:               1228  out of   3840    31%  
+ Number of IOs:                         130
+ Number of bonded IOBs:                 116  out of    173    67%  
+    IOB Flip Flops:                       3
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 1088  |
+N1                                 | NONE(m1/disp_code_31)  | 38    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 78.398ns (Maximum Frequency: 12.755MHz)
+   Minimum input arrival time before clock: 42.244ns
+   Maximum output required time after clock: 44.204ns
+   Maximum combinational path delay: 47.249ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 78.398ns (frequency: 12.755MHz)
+  Total number of paths / destination ports: 41024 / 1088
+-------------------------------------------------------------------------
+Delay:               39.199ns (Levels of Logic = 34)
+  Source:            m0/Adat_0 (FF)
+  Destination:       m0/reg32_31 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk falling
+
+  Data Path: m0/Adat_0 to m0/reg32_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.720   1.198  m0/Adat_0 (m0/Adat_0)
+     LUT3_D:I1->LO         1   0.551   0.126  m1/m0/A1/co1 (N5)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A2/co1 (m1/m0/Ctemp<2>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A3/co1 (N16)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A4/co1 (m1/m0/Ctemp<4>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A5/co1 (N15)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A6/co1 (m1/m0/Ctemp<6>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A7/co1 (N14)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A8/co1 (m1/m0/Ctemp<8>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A9/co1 (N13)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A10/co1 (m1/m0/Ctemp<10>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A11/co1 (N19)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A12/co1 (m1/m0/Ctemp<12>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A13/co1 (N18)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A14/co1 (m1/m0/Ctemp<14>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A15/co1 (N17)
+     LUT4:I3->O            2   0.551   0.945  m1/m0/A16/co1 (m1/m0/Ctemp<16>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A17/co1 (N12)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A18/co1 (m1/m0/Ctemp<18>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A19/co1 (N11)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A20/co1 (m1/m0/Ctemp<20>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A21/co1 (N10)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A22/co1 (m1/m0/Ctemp<22>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A23/co1 (N9)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A24/co1 (m1/m0/Ctemp<24>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A25/co1 (N8)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A26/co1 (m1/m0/Ctemp<26>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A27/co1 (N7)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A28/co1 (m1/m0/Ctemp<28>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A29/co1 (N6)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A30/co1 (m1/m0/Ctemp<30>)
+     LUT3:I2->O            1   0.551   0.827  m1/m0/A31/co1 (m1/m0/Ctemp<31>)
+     LUT4_L:I3->LO         1   0.551   0.295  m1/disp_code_mux0000<31>67 (m1/disp_code_mux0000<31>67)
+     LUT2:I1->O            3   0.551   0.000  m1/disp_code_mux0000<31>70 (m1/disp_code_mux0000<31>)
+     LD:D->Q              16   0.471   1.237  m1/disp_code_31_1 (m1/disp_code_31_1)
+     FDE_1:D                   0.203          m0/reg16_31
+    ----------------------------------------
+    Total                     39.199ns (19.577ns logic, 19.622ns route)
+                                       (49.9% logic, 50.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 68640 / 2112
+-------------------------------------------------------------------------
+Offset:              42.244ns (Levels of Logic = 36)
+  Source:            I<0> (PAD)
+  Destination:       m0/reg32_31 (FF)
+  Destination Clock: clk falling
+
+  Data Path: I<0> to m0/reg32_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.821   1.405  I_0_IBUF (I_0_IBUF)
+     LUT4:I0->O           31   0.551   2.186  m1/switch1 (m1/switch)
+     LUT3_D:I0->LO         1   0.551   0.126  m1/m0/A1/co1 (N5)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A2/co1 (m1/m0/Ctemp<2>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A3/co1 (N16)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A4/co1 (m1/m0/Ctemp<4>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A5/co1 (N15)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A6/co1 (m1/m0/Ctemp<6>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A7/co1 (N14)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A8/co1 (m1/m0/Ctemp<8>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A9/co1 (N13)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A10/co1 (m1/m0/Ctemp<10>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A11/co1 (N19)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A12/co1 (m1/m0/Ctemp<12>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A13/co1 (N18)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A14/co1 (m1/m0/Ctemp<14>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A15/co1 (N17)
+     LUT4:I3->O            2   0.551   0.945  m1/m0/A16/co1 (m1/m0/Ctemp<16>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A17/co1 (N12)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A18/co1 (m1/m0/Ctemp<18>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A19/co1 (N11)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A20/co1 (m1/m0/Ctemp<20>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A21/co1 (N10)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A22/co1 (m1/m0/Ctemp<22>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A23/co1 (N9)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A24/co1 (m1/m0/Ctemp<24>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A25/co1 (N8)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A26/co1 (m1/m0/Ctemp<26>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A27/co1 (N7)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A28/co1 (m1/m0/Ctemp<28>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A29/co1 (N6)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A30/co1 (m1/m0/Ctemp<30>)
+     LUT3:I2->O            1   0.551   0.827  m1/m0/A31/co1 (m1/m0/Ctemp<31>)
+     LUT4_L:I3->LO         1   0.551   0.295  m1/disp_code_mux0000<31>67 (m1/disp_code_mux0000<31>67)
+     LUT2:I1->O            3   0.551   0.000  m1/disp_code_mux0000<31>70 (m1/disp_code_mux0000<31>)
+     LD:D->Q              16   0.471   1.237  m1/disp_code_31_1 (m1/disp_code_31_1)
+     FDE_1:D                   0.203          m0/reg16_31
+    ----------------------------------------
+    Total                     42.244ns (20.229ns logic, 22.015ns route)
+                                       (47.9% logic, 52.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1282 / 96
+-------------------------------------------------------------------------
+Offset:              44.204ns (Levels of Logic = 35)
+  Source:            m0/Adat_0 (FF)
+  Destination:       result<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: m0/Adat_0 to result<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.720   1.198  m0/Adat_0 (m0/Adat_0)
+     LUT3_D:I1->LO         1   0.551   0.126  m1/m0/A1/co1 (N5)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A2/co1 (m1/m0/Ctemp<2>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A3/co1 (N16)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A4/co1 (m1/m0/Ctemp<4>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A5/co1 (N15)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A6/co1 (m1/m0/Ctemp<6>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A7/co1 (N14)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A8/co1 (m1/m0/Ctemp<8>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A9/co1 (N13)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A10/co1 (m1/m0/Ctemp<10>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A11/co1 (N19)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A12/co1 (m1/m0/Ctemp<12>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A13/co1 (N18)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A14/co1 (m1/m0/Ctemp<14>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A15/co1 (N17)
+     LUT4:I3->O            2   0.551   0.945  m1/m0/A16/co1 (m1/m0/Ctemp<16>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A17/co1 (N12)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A18/co1 (m1/m0/Ctemp<18>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A19/co1 (N11)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A20/co1 (m1/m0/Ctemp<20>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A21/co1 (N10)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A22/co1 (m1/m0/Ctemp<22>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A23/co1 (N9)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A24/co1 (m1/m0/Ctemp<24>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A25/co1 (N8)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A26/co1 (m1/m0/Ctemp<26>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A27/co1 (N7)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A28/co1 (m1/m0/Ctemp<28>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A29/co1 (N6)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A30/co1 (m1/m0/Ctemp<30>)
+     LUT3:I2->O            1   0.551   0.827  m1/m0/A31/co1 (m1/m0/Ctemp<31>)
+     LUT4_L:I3->LO         1   0.551   0.295  m1/disp_code_mux0000<31>67 (m1/disp_code_mux0000<31>67)
+     LUT2:I1->O            3   0.551   0.000  m1/disp_code_mux0000<31>70 (m1/disp_code_mux0000<31>)
+     LD:D->Q               1   0.471   0.801  m1/disp_code_31 (m1/disp_code_31)
+     OBUF:I->O                 5.644          result_31_OBUF (result<31>)
+    ----------------------------------------
+    Total                     44.204ns (25.018ns logic, 19.186ns route)
+                                       (56.6% logic, 43.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1923 / 32
+-------------------------------------------------------------------------
+Delay:               47.249ns (Levels of Logic = 37)
+  Source:            I<0> (PAD)
+  Destination:       result<31> (PAD)
+
+  Data Path: I<0> to result<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.821   1.405  I_0_IBUF (I_0_IBUF)
+     LUT4:I0->O           31   0.551   2.186  m1/switch1 (m1/switch)
+     LUT3_D:I0->LO         1   0.551   0.126  m1/m0/A1/co1 (N5)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A2/co1 (m1/m0/Ctemp<2>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A3/co1 (N16)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A4/co1 (m1/m0/Ctemp<4>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A5/co1 (N15)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A6/co1 (m1/m0/Ctemp<6>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A7/co1 (N14)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A8/co1 (m1/m0/Ctemp<8>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A9/co1 (N13)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A10/co1 (m1/m0/Ctemp<10>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A11/co1 (N19)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A12/co1 (m1/m0/Ctemp<12>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A13/co1 (N18)
+     LUT4:I3->O            2   0.551   0.903  m1/m0/A14/co1 (m1/m0/Ctemp<14>)
+     LUT4_D:I3->LO         1   0.551   0.126  m1/m0/A15/co1 (N17)
+     LUT4:I3->O            2   0.551   0.945  m1/m0/A16/co1 (m1/m0/Ctemp<16>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A17/co1 (N12)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A18/co1 (m1/m0/Ctemp<18>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A19/co1 (N11)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A20/co1 (m1/m0/Ctemp<20>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A21/co1 (N10)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A22/co1 (m1/m0/Ctemp<22>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A23/co1 (N9)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A24/co1 (m1/m0/Ctemp<24>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A25/co1 (N8)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A26/co1 (m1/m0/Ctemp<26>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A27/co1 (N7)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A28/co1 (m1/m0/Ctemp<28>)
+     LUT3_D:I2->LO         1   0.551   0.168  m1/m0/A29/co1 (N6)
+     LUT3:I2->O            2   0.551   0.945  m1/m0/A30/co1 (m1/m0/Ctemp<30>)
+     LUT3:I2->O            1   0.551   0.827  m1/m0/A31/co1 (m1/m0/Ctemp<31>)
+     LUT4_L:I3->LO         1   0.551   0.295  m1/disp_code_mux0000<31>67 (m1/disp_code_mux0000<31>67)
+     LUT2:I1->O            3   0.551   0.000  m1/disp_code_mux0000<31>70 (m1/disp_code_mux0000<31>)
+     LD:D->Q               1   0.471   0.801  m1/disp_code_31 (m1/disp_code_31)
+     OBUF:I->O                 5.644          result_31_OBUF (result<31>)
+    ----------------------------------------
+    Total                     47.249ns (25.670ns logic, 21.579ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.42 secs
+ 
+--> 
+
+Total memory usage is 277380 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

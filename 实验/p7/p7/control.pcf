@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map K.31 on Tue Apr 15 11:32:07 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Branch" LOCATE = SITE "L12" LEVEL 1;
+COMP "RegDst" LOCATE = SITE "P11" LEVEL 1;
+COMP "MemWrite" LOCATE = SITE "N14" LEVEL 1;
+COMP "op<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "WriteReg" LOCATE = SITE "P13" LEVEL 1;
+COMP "op<1>" LOCATE = SITE "G12" LEVEL 1;
+COMP "op<2>" LOCATE = SITE "H14" LEVEL 1;
+COMP "op<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "anode" LOCATE = SITE "E13" LEVEL 1;
+COMP "ALUop0" LOCATE = SITE "K12" LEVEL 1;
+COMP "ALUop1" LOCATE = SITE "P14" LEVEL 1;
+COMP "op<4>" LOCATE = SITE "J14" LEVEL 1;
+COMP "MemToReg" LOCATE = SITE "N12" LEVEL 1;
+COMP "op<5>" LOCATE = SITE "J13" LEVEL 1;
+COMP "dot" LOCATE = SITE "P16" LEVEL 1;
+COMP "ALUsrcB" LOCATE = SITE "P12" LEVEL 1;
+SCHEMATIC END;
+

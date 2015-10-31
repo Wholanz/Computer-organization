@@ -1,0 +1,90 @@
+Determining compilation order of HDL files
+Analyzing Verilog file adder_32bits.v
+Analyzing Verilog file timer_1s.v
+Analyzing Verilog file state_control.v
+Analyzing Verilog file state.v
+Analyzing Verilog file regfile.v
+Analyzing Verilog file pc.v
+Analyzing Verilog file pbdebounce.v
+Analyzing Verilog file mux_5.v
+Analyzing Verilog file mux_32.v
+Analyzing Verilog file display.v
+Analyzing Verilog file data.v
+Analyzing Verilog file control.v
+Analyzing Verilog file aluc.v
+Analyzing Verilog file alu.v
+Analyzing Verilog file mul_CPU.v
+Analyzing Verilog file tester.v
+Analyzing Verilog file F:/xilinx/10.1/ISE/verilog/src/glbl.v
+Saving Verilog parse-tree work.adder_32bits into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/adder_32bits.sdb
+Saving Verilog parse-tree work.adder_1bit into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/adder_1bit.sdb
+Saving Verilog parse-tree work.timer_1s into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/timer_1s.sdb
+Saving Verilog parse-tree work.state_control into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/state_control.sdb
+Saving Verilog parse-tree work.state_now into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/state_now.sdb
+Saving Verilog parse-tree work.regfile into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/regfile.sdb
+Saving Verilog parse-tree work.pc into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/pc.sdb
+Saving Verilog parse-tree work.pbdebounce into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/pbdebounce.sdb
+Saving Verilog parse-tree work.timer_1ms into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/timer_1ms.sdb
+Saving Verilog parse-tree work.mux_5 into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/mux_5.sdb
+Saving Verilog parse-tree work.mux_32 into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/mux_32.sdb
+Saving Verilog parse-tree work.display into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/display.sdb
+Saving Verilog parse-tree work.data into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/data.sdb
+Saving Verilog parse-tree work.control into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/control.sdb
+Saving Verilog parse-tree work.aluc into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/aluc.sdb
+Saving Verilog parse-tree work.alu into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/alu.sdb
+Saving Verilog parse-tree work.mul_CPU into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/mul_@c@p@u.sdb
+Saving Verilog parse-tree work.tester into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/tester.sdb
+Saving Verilog parse-tree work.glbl into
+c:/users/vaio/desktop/p9/multi_cycle/isim/work/glbl.sdb
+Starting static elaboration
+Restoring Verilog parse-tree xilinxcorelib_ver.BLKMEMDP_V6_3 from
+f:/xilinx/10.1/ise/verilog/hdp/nt/xilinxcorelib_ver/xilinxcorelib_ver.sdbl
+WARNING:HDLCompiler:189 - "mul_CPU.v" Line 101. Actual bit length 32 differs
+   from formal bit length 5 for port C
+WARNING:HDLCompiler:189 - "mul_CPU.v" Line 106. Actual bit length 26 differs
+   from formal bit length 32 for port C
+Completed static elaboration
+Fuse Memory Usage: 129556 Kb
+Fuse CPU Usage: 186 ms
+Compiling module glbl
+Compiling module timer_1ms
+Compiling module pbdebounce
+Compiling module BLKMEMDP_V6_3(c_addra_width=9,c_...
+Compiling module data
+Compiling module timer_1s
+Compiling module pc
+Compiling module state_now
+Compiling module state_control
+Compiling module control
+Compiling module regfile
+Compiling module aluc
+Compiling module adder_1bit
+Compiling module adder_32bits
+Compiling module alu
+Compiling module mux_32
+Compiling module mux_5
+Compiling module display
+Compiling module mul_CPU
+Compiling module tester
+Compiled 20 Verilog Units
+Built simulation executable tester_isim_beh.exe
+Fuse Memory Usage: 133252 Kb
+Fuse CPU Usage: 654 ms

@@ -1,0 +1,19 @@
+NET"op[0]" LOC="F12";
+NET"op[1]" LOC="G12";
+NET"op[2]" LOC="H14";
+NET"op[3]" LOC="H13";
+NET"op[4]" LOC="J14";
+NET"op[5]" LOC="J13";
+
+
+NET"ALUop0" LOC="K12";
+NET"ALUop1" LOC="P14";
+NET"Branch" LOC="L12";
+NET"MemWrite" LOC="N14";
+NET"WriteReg" LOC="P13";
+NET"MemToReg" LOC="N12";
+NET"ALUsrcB" LOC="P12";
+NET"RegDst" LOC="P11";
+
+NET"anode" LOC="E13";
+NET"dot"   LOC="P16";

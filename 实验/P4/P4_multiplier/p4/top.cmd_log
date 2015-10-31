@@ -1,0 +1,124 @@
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf
+bitgen -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -f top.ut top.ncd
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf p3.ucf
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf p3.ucf
+bitgen -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -f top.ut top.ncd
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf p3.ucf
+bitgen -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf p3.ucf
+bitgen -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf p3.ucf
+bitgen -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf p3.ucf
+bitgen -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf p3.ucf
+bitgen -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf p3.ucf
+bitgen -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf p3.ucf
+bitgen -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf p3.ucf
+bitgen -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf p3.ucf
+bitgen -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -ifn "C:/Users/student/Desktop/P4/p4/top.xst" -ofn "C:/Users/student/Desktop/P4/p4/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf p3.ucf
+bitgen -ise "C:/Users/student/Desktop/P4/p4/p4.ise" -intstyle ise -f top.ut top.ncd

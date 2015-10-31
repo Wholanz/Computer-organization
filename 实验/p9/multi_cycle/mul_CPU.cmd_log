@@ -1,0 +1,300 @@
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/vaio/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+xst -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.xst" -ofn "C:/Users/student/Desktop/p9/multi_cycle/mul_CPU.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "mul_CPU.ngc" mul_CPU.ngd
+map -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd mul_CPU.pcf
+par -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -w -intstyle ise -ol std -t 1 mul_CPU_map.ncd mul_CPU.ncd mul_CPU.pcf
+trce -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -e 3 -s 4 -xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise" -intstyle ise -f mul_CPU.ut mul_CPU.ncd

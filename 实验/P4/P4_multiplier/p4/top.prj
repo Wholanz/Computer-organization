@@ -1,0 +1,5 @@
+verilog work "timer_1ms.v"
+verilog work "pbdebounce.v"
+verilog work "multiply.v"
+verilog work "display.v"
+verilog work "top.v"

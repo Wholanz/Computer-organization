@@ -1,0 +1,5 @@
+verilog work "adder_32bits.v"
+verilog work "RegFile.v"
+verilog work "aluc.v"
+verilog work "alu.v"
+verilog work "top.v"

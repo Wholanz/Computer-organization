@@ -1,0 +1,8 @@
+xst -ise "C:/Users/vaio/Desktop/p6/p6/p6.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p6/p6/top.xst" -ofn "C:/Users/vaio/Desktop/p6/p6/top.syr" 
+xst -ise "C:/Users/vaio/Desktop/p6/p6/p6.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p6/p6/top.xst" -ofn "C:/Users/vaio/Desktop/p6/p6/top.syr" 
+xst -ise "C:/Users/vaio/Desktop/p6/p6/p6.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p6/p6/top.xst" -ofn "C:/Users/vaio/Desktop/p6/p6/top.syr" 
+xst -ise "C:/Users/vaio/Desktop/p6/p6/p6.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p6/p6/top.xst" -ofn "C:/Users/vaio/Desktop/p6/p6/top.syr" 
+xst -ise "C:/Users/vaio/Desktop/p6/p6/p6.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p6/p6/top.xst" -ofn "C:/Users/vaio/Desktop/p6/p6/top.syr" 
+xst -ise "C:/Users/vaio/Desktop/p6/p6/p6.ise" -intstyle ise -ifn "C:/Users/vaio/Desktop/p6/p6/top.xst" -ofn "C:/Users/vaio/Desktop/p6/p6/top.syr" 
+ngdbuild -ise "p6.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 top.ngc top.ngd  
+netgen -ise "C:/Users/vaio/Desktop/p6/p6/p6.ise" -intstyle ise -insert_glbl true -w -dir netgen/translate -ofmt verilog -sim top.ngd top_translate.v 

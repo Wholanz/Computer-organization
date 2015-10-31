@@ -1,0 +1,115 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise -intstyle ise -e 3 -s 4
+-xml mul_CPU mul_CPU.ncd -o mul_CPU.twr mul_CPU.pcf -ucf CPU_ucf.ucf
+
+Design file:              mul_CPU.ncd
+Physical constraint file: mul_CPU.pcf
+Device,package,speed:     xc3s200,ft256,-4 (PRODUCTION 1.39 2008-01-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+disp_type<0>|    7.175(R)|   -1.462(R)|clk_BUFGP         |   0.000|
+disp_type<1>|    6.349(R)|   -1.395(R)|clk_BUFGP         |   0.000|
+reg_index<0>|   21.494(R)|   -2.658(R)|clk_BUFGP         |   0.000|
+reg_index<1>|   12.252(R)|   -2.871(R)|clk_BUFGP         |   0.000|
+reg_index<2>|   11.023(R)|   -2.865(R)|clk_BUFGP         |   0.000|
+reg_index<3>|   10.738(R)|   -2.802(R)|clk_BUFGP         |   0.000|
+reg_index<4>|   10.275(R)|   -2.333(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+anode<0>    |    9.204(R)|clk_BUFGP         |   0.000|
+anode<1>    |    8.380(R)|clk_BUFGP         |   0.000|
+anode<2>    |    8.380(R)|clk_BUFGP         |   0.000|
+anode<3>    |   10.507(R)|clk_BUFGP         |   0.000|
+segment<0>  |   10.310(R)|clk_BUFGP         |   0.000|
+segment<1>  |    9.540(R)|clk_BUFGP         |   0.000|
+segment<2>  |    9.622(R)|clk_BUFGP         |   0.000|
+segment<3>  |   10.457(R)|clk_BUFGP         |   0.000|
+segment<4>  |   10.495(R)|clk_BUFGP         |   0.000|
+segment<5>  |   10.026(R)|clk_BUFGP         |   0.000|
+segment<6>  |   10.324(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock mode to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+led<0>      |   17.874(F)|multi_clk         |   0.000|
+led<1>      |   18.351(F)|multi_clk         |   0.000|
+led<2>      |   13.595(R)|multi_clk         |   0.000|
+led<3>      |   13.594(R)|multi_clk         |   0.000|
+led<4>      |   13.595(R)|multi_clk         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.039|         |         |         |
+mode           |    9.564|   11.655|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock mode
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    6.435|         |
+mode           |   20.809|   18.183|   18.133|   16.787|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+mode           |led<6>         |    8.364|
+mode           |led<7>         |    8.719|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Jun 16 16:12:54 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 128 MB
+
+
+

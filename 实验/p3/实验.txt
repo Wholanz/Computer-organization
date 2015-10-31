@@ -1,0 +1,185 @@
+module hlz(input wire clk,
+           input wire[1:0] button,
+			  input wire[5:0] switch,
+			  output wire[7:0] segment,
+			  output wire[3:0] anode,
+			  output wire o_zf
+    );
+
+wire[2:0] control;
+wire[15:0] disp_code;
+wire[15:0] disp_num;
+reg[15:0] op1,op2;
+
+initial begin
+op1=16'h1122;
+op2=16'h3344;
+end
+
+assign disp_num = switch[1]?disp_code: (switch[0]?op2:op1);
+display M3(clk, disp_num, anode, segment);
+alu M1(op1, op2, control, o_zf, disp_code);
+aluc M2 (button, switch[5:2], control);
+
+
+endmodule
+
+
+module display(clk,digit,anode,segment
+    );
+input wire clk;
+input wire[15:0] digit;
+output reg[3:0]anode;
+output reg[7:0]segment;
+reg [3:0] code=4'b0;
+reg [15:0] count=16'b0;
+
+always @(posedge clk)
+begin
+     case(count[15:14])
+	       2'b00:begin
+			 anode<=4'b1110;
+			 code<=digit[3:0];
+			 end
+			 2'b01:begin
+			 anode<=4'b1101;
+			 code<=digit[7:4];
+			 end
+			 2'b10:begin
+			 anode<=4'b1011;
+			 code<=digit[11:8];
+			 end
+			 2'b11:begin
+			 anode<=4'b0111;
+			 code<=digit[15:12];
+			 end
+	  endcase
+case(code) 
+        4'b0000: segment <= 8'b11000000;
+        4'b0001: segment <= 8'b11111001;
+        4'b0010: segment <= 8'b10100100;
+        4'b0011: segment <= 8'b10110000;
+        4'b0100: segment <= 8'b10011001;
+        4'b0101: segment <= 8'b10010010;
+        4'b0110: segment <= 8'b10000010;
+        4'b0111: segment <= 8'b11111000;
+        4'b1000: segment <= 8'b10000000;
+        4'b1001: segment <= 8'b10010000;
+        4'b1010: segment <= 8'b10001000;
+        4'b1011: segment <= 8'b10000011;
+        4'b1100: segment <= 8'b11000110;
+        4'b1101: segment <= 8'b10100001;
+        4'b1110: segment <= 8'b10000110;
+        4'b1111: segment <= 8'b10001110;
+        default: segment <= 8'b00000000;
+endcase
+count<=count+1;
+end
+endmodule
+
+
+module alu(input wire[15:0] op1,
+           input wire[15:0] op2,
+			  input wire[2:0]  control,
+			  output wire o_zf,
+			  output reg[15:0] disp_code
+    );
+
+wire switch;
+wire co;
+wire[15:0] add_sub_result;
+assign switch = (control==3'b110);
+
+
+assign o_zf = (disp_code==0);
+adder_16bits m0(op1, op2, switch, add_sub_result, co);
+
+always @* begin
+
+case(control)
+
+3'b010: disp_code= add_sub_result;
+3'b110: disp_code= add_sub_result;
+3'b010: disp_code= add_sub_result;
+3'b110: disp_code= add_sub_result;
+3'b000: disp_code= op1 & op2;
+3'b001: disp_code= op1 | op2;
+3'b111: disp_code= (op1<op2?1:0);
+
+endcase
+
+end
+
+
+endmodule 
+
+
+
+module aluc(input wire[1:0] button,
+            input wire[3:0] switch,
+				output wire[2:0]control
+    );
+
+wire ALUop1,ALUop2;
+wire result1,result2,result3,result4,result5,result6;
+wire or_result1,or_result2;
+
+assign ALUop1 = button[1];
+assign ALUop2 = button[0];
+
+
+and
+   and1(result1,~switch[3],~switch[2],~switch[1],~switch[0],ALUop1),
+	and2(result2,~switch[3],~switch[2],switch[1],~switch[0],ALUop1),
+	and3(result3,~switch[3],switch[2],~switch[1],~switch[0],ALUop1),
+	and4(result4,~switch[3],switch[2],~switch[1],switch[0],ALUop1),
+	and5(result5,switch[3],~switch[2],switch[1],~switch[0],ALUop1),
+	and6(result6,~ALUop1,ALUop2);
+or
+  or1(or_result1,result4,result5),
+  or2(control[1],result1,result2,result5,result6),
+  or3(control[2],result6,result2,result5);
+and
+   and7(control[0],ALUop1,or_result1);
+
+
+
+endmodule
+
+
+module adder_16bits(A, B, Ctr, S, Co);
+	parameter size=16;
+   input [size:1] A;
+   input [size:1] B;
+   input Ctr;
+   output [size:1] S;
+   output Co;
+	wire[size-1:1]  Ctemp;
+	wire[size:1]    Bo;
+	
+	assign Bo={16{Ctr}}^B; 
+adder_1bit 	A1(.a(A[1]),.b(Bo[1]),.ci(Ctr),.s(S[1]),.co(Ctemp[1])),
+		A2(A[2],Bo[2],Ctemp[1],S[2],Ctemp[2]),
+		A3(A[3],Bo[3],Ctemp[2],S[3],Ctemp[3]),
+		A4(A[4],Bo[4],Ctemp[3],S[4],Ctemp[4]),
+		A5(A[5],Bo[5],Ctemp[4],S[5],Ctemp[5]),
+		A6(A[6],Bo[6],Ctemp[5],S[6],Ctemp[6]),
+		A7(A[7],Bo[7],Ctemp[6],S[7],Ctemp[7]),
+		A8(A[8],Bo[8],Ctemp[7],S[8],Ctemp[8]),
+		A9(A[9],Bo[9],Ctemp[8],S[9],Ctemp[9]),
+		A10(A[10],Bo[10],Ctemp[9],S[10],Ctemp[10]),
+		A11(A[11],Bo[11],Ctemp[10],S[11],Ctemp[11]),
+		A12(A[12],Bo[12],Ctemp[11],S[12],Ctemp[12]),
+		A13(A[13],Bo[13],Ctemp[12],S[13],Ctemp[13]),
+		A14(A[14],Bo[14],Ctemp[13],S[14],Ctemp[14]),
+		A15(A[15],Bo[15],Ctemp[14],S[15],Ctemp[15]),
+		A16(A[16],Bo[16],Ctemp[15],S[16],Co);
+endmodule 
+
+module adder_1bit(a, b, ci, s, co);
+input wire a,b,ci;
+	output wire s,co;
+	and (c1,a,b), (c2,b,ci), (c3,a,ci);
+	xor (s1,a,b), (s,s1,ci);
+	or (co,c1,c2,c3);
+endmodule 

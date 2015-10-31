@@ -1,0 +1,3 @@
+verilog work "control.v"
+verilog work "tester.v"
+verilog work "C:/Xilinx/10.1/ISE/verilog/src/glbl.v"

@@ -1,0 +1,66 @@
+xst -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p2/hlz/p3/hlz.xst" -ofn "C:/Users/student/Desktop/p2/hlz/p3/hlz.syr"
+xst -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p2/hlz/p3/hlz.xst" -ofn "C:/Users/student/Desktop/p2/hlz/p3/hlz.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "hlz.ngc" hlz.ngd
+map -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o hlz_map.ncd hlz.ngd hlz.pcf
+par -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -w -intstyle ise -ol std -t 1 hlz_map.ncd hlz.ncd hlz.pcf
+trce -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -e 3 -s 4 -xml hlz hlz.ncd -o hlz.twr hlz.pcf -ucf lab3.ucf
+bitgen -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -f hlz.ut hlz.ncd
+ngdbuild -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "hlz.ngc" hlz.ngd
+map -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o hlz_map.ncd hlz.ngd hlz.pcf
+par -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -w -intstyle ise -ol std -t 1 hlz_map.ncd hlz.ncd hlz.pcf
+trce -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -e 3 -s 4 -xml hlz hlz.ncd -o hlz.twr hlz.pcf -ucf lab3.ucf
+bitgen -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -f hlz.ut hlz.ncd
+xst -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p2/hlz/p3/hlz.xst" -ofn "C:/Users/student/Desktop/p2/hlz/p3/hlz.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "hlz.ngc" hlz.ngd
+map -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o hlz_map.ncd hlz.ngd hlz.pcf
+par -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -w -intstyle ise -ol std -t 1 hlz_map.ncd hlz.ncd hlz.pcf
+trce -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -e 3 -s 4 -xml hlz hlz.ncd -o hlz.twr hlz.pcf -ucf lab3.ucf
+bitgen -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -f hlz.ut hlz.ncd
+xst -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p2/hlz/p3/hlz.xst" -ofn "C:/Users/student/Desktop/p2/hlz/p3/hlz.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "hlz.ngc" hlz.ngd
+map -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o hlz_map.ncd hlz.ngd hlz.pcf
+par -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -w -intstyle ise -ol std -t 1 hlz_map.ncd hlz.ncd hlz.pcf
+trce -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -e 3 -s 4 -xml hlz hlz.ncd -o hlz.twr hlz.pcf -ucf lab3.ucf
+bitgen -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -f hlz.ut hlz.ncd
+xst -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p2/hlz/p3/hlz.xst" -ofn "C:/Users/student/Desktop/p2/hlz/p3/hlz.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "hlz.ngc" hlz.ngd
+map -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o hlz_map.ncd hlz.ngd hlz.pcf
+par -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -w -intstyle ise -ol std -t 1 hlz_map.ncd hlz.ncd hlz.pcf
+trce -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -e 3 -s 4 -xml hlz hlz.ncd -o hlz.twr hlz.pcf -ucf lab3.ucf
+bitgen -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -f hlz.ut hlz.ncd
+xst -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p2/hlz/p3/hlz.xst" -ofn "C:/Users/student/Desktop/p2/hlz/p3/hlz.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "hlz.ngc" hlz.ngd
+map -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o hlz_map.ncd hlz.ngd hlz.pcf
+par -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -w -intstyle ise -ol std -t 1 hlz_map.ncd hlz.ncd hlz.pcf
+trce -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -e 3 -s 4 -xml hlz hlz.ncd -o hlz.twr hlz.pcf -ucf lab3.ucf
+bitgen -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -f hlz.ut hlz.ncd
+xst -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p2/hlz/p3/hlz.xst" -ofn "C:/Users/student/Desktop/p2/hlz/p3/hlz.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "hlz.ngc" hlz.ngd
+map -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o hlz_map.ncd hlz.ngd hlz.pcf
+par -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -w -intstyle ise -ol std -t 1 hlz_map.ncd hlz.ncd hlz.pcf
+trce -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -e 3 -s 4 -xml hlz hlz.ncd -o hlz.twr hlz.pcf -ucf lab3.ucf
+bitgen -ise "C:/Users/student/Desktop/p2/hlz/p3/p3.ise" -intstyle ise -f hlz.ut hlz.ncd
+xst -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p3/hlz.xst" -ofn "C:/Users/student/Desktop/p3/hlz.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "hlz.ngc" hlz.ngd
+map -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o hlz_map.ncd hlz.ngd hlz.pcf
+par -ise "C:/Users/student/Desktop/p3/p3.ise" -w -intstyle ise -ol std -t 1 hlz_map.ncd hlz.ncd hlz.pcf
+trce -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -e 3 -s 4 -xml hlz hlz.ncd -o hlz.twr hlz.pcf -ucf lab3.ucf
+bitgen -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -f hlz.ut hlz.ncd
+xst -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p3/hlz.xst" -ofn "C:/Users/student/Desktop/p3/hlz.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "hlz.ngc" hlz.ngd
+map -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o hlz_map.ncd hlz.ngd hlz.pcf
+par -ise "C:/Users/student/Desktop/p3/p3.ise" -w -intstyle ise -ol std -t 1 hlz_map.ncd hlz.ncd hlz.pcf
+trce -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -e 3 -s 4 -xml hlz hlz.ncd -o hlz.twr hlz.pcf -ucf lab3.ucf
+bitgen -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -f hlz.ut hlz.ncd
+xst -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p3/hlz.xst" -ofn "C:/Users/student/Desktop/p3/hlz.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "hlz.ngc" hlz.ngd
+map -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o hlz_map.ncd hlz.ngd hlz.pcf
+par -ise "C:/Users/student/Desktop/p3/p3.ise" -w -intstyle ise -ol std -t 1 hlz_map.ncd hlz.ncd hlz.pcf
+trce -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -e 3 -s 4 -xml hlz hlz.ncd -o hlz.twr hlz.pcf -ucf lab3.ucf
+bitgen -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -f hlz.ut hlz.ncd
+xst -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p3/hlz.xst" -ofn "C:/Users/student/Desktop/p3/hlz.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "hlz.ngc" hlz.ngd
+map -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o hlz_map.ncd hlz.ngd hlz.pcf
+par -ise "C:/Users/student/Desktop/p3/p3.ise" -w -intstyle ise -ol std -t 1 hlz_map.ncd hlz.ncd hlz.pcf
+trce -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -e 3 -s 4 -xml hlz hlz.ncd -o hlz.twr hlz.pcf -ucf lab3.ucf
+bitgen -ise "C:/Users/student/Desktop/p3/p3.ise" -intstyle ise -f hlz.ut hlz.ncd

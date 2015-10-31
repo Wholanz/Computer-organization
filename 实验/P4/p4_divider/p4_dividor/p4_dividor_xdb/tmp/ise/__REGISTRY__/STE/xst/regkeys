@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise -intstyle ise -ifn C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst -ofn C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

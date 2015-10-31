@@ -1,0 +1,262 @@
+Release 10.1 Map K.31 (nt)
+Xilinx Mapping Report File for Design 'mul_CPU'
+
+Design Information
+------------------
+Command Line   : map -ise
+C:/Users/student/Desktop/p9/multi_cycle/multi_cycle.ise -intstyle ise -p
+xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o mul_CPU_map.ncd mul_CPU.ngd
+mul_CPU.pcf 
+Target Device  : xc3s200
+Target Package : ft256
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.46 $
+Mapped Date    : Mon Jun 16 16:12:01 2014
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Total Number Slice Registers:       1,326 out of   3,840   34%
+    Number used as Flip Flops:        1,322
+    Number used as Latches:               4
+  Number of 4 input LUTs:             2,212 out of   3,840   57%
+Logic Distribution:
+  Number of occupied Slices:          1,698 out of   1,920   88%
+    Number of Slices containing only related logic:   1,698 out of   1,698 100%
+    Number of Slices containing unrelated logic:          0 out of   1,698   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       2,312 out of   3,840   60%
+    Number used as logic:             2,212
+    Number used as a route-thru:        100
+  Number of bonded IOBs:                 31 out of     173   17%
+    IOB Flip Flops:                       3
+  Number of RAMB16s:                      1 out of      12    8%
+  Number of BUFGMUXs:                     2 out of       8   25%
+
+Peak Memory Usage:  181 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion:   4 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:266 - The function generator pc_change608_SW0 failed to merge with
+   F5 multiplexer pc_change472_SW0.  There is a conflict for the FXMUX.  The
+   design will exhibit suboptimal timing.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net s2/next_state_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   4 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		m1/GND
+VCC 		m1/VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |             | Strength | Rate |              |          | Delay    |
++----------------------------------------------------------------------------------------------------------------------------------------+
+| anode<0>                           | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| anode<1>                           | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| anode<2>                           | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| anode<3>                           | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| clk                                | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| disp_type<0>                       | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| disp_type<1>                       | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| exec                               | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| led<0>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led<1>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led<2>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW | OFF1         |          |          |
+| led<3>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW | OFF1         |          |          |
+| led<4>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW | OFF1         |          |          |
+| led<5>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led<6>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| led<7>                             | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| mode                               | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| reg_index<0>                       | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| reg_index<1>                       | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| reg_index<2>                       | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| reg_index<3>                       | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| reg_index<4>                       | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| rst                                | IOB              | INPUT     | LVCMOS25    |          |      |              |          |          |
+| segment<0>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<1>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<2>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<3>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<4>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<5>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<6>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
+| segment<7>                         | IOB              | OUTPUT    | LVCMOS25    | 12       | SLOW |              |          |          |
++----------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 14 - Utilization by Hierarchy
+-------------------------------------
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| mul_CPU/           |           | 216/1990      | 178/1326      | 152/2312      | 0/0           | 0/1       | 0/0       | 2/2   | 0/0   | mul_CPU            |
+| +a1                |           | 8/8           | 0/0           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a1         |
+| +a2                |           | 81/237        | 0/0           | 122/322       | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2         |
+| ++m0               |           | 0/156         | 0/0           | 0/200         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0      |
+| +++A1              |           | 2/2           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A1   |
+| +++A10             |           | 5/5           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A10  |
+| +++A11             |           | 5/5           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A11  |
+| +++A12             |           | 6/6           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A12  |
+| +++A13             |           | 5/5           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A13  |
+| +++A14             |           | 6/6           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A14  |
+| +++A15             |           | 5/5           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A15  |
+| +++A16             |           | 3/3           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A16  |
+| +++A17             |           | 5/5           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A17  |
+| +++A18             |           | 6/6           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A18  |
+| +++A19             |           | 5/5           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A19  |
+| +++A2              |           | 3/3           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A2   |
+| +++A20             |           | 8/8           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A20  |
+| +++A21             |           | 5/5           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A21  |
+| +++A22             |           | 6/6           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A22  |
+| +++A23             |           | 5/5           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A23  |
+| +++A24             |           | 5/5           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A24  |
+| +++A25             |           | 5/5           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A25  |
+| +++A26             |           | 6/6           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A26  |
+| +++A27             |           | 5/5           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A27  |
+| +++A28             |           | 8/8           | 0/0           | 11/11         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A28  |
+| +++A29             |           | 5/5           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A29  |
+| +++A3              |           | 5/5           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A3   |
+| +++A30             |           | 4/4           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A30  |
+| +++A31             |           | 5/5           | 0/0           | 8/8           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A31  |
+| +++A32             |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A32  |
+| +++A4              |           | 3/3           | 0/0           | 3/3           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A4   |
+| +++A5              |           | 5/5           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A5   |
+| +++A6              |           | 6/6           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A6   |
+| +++A7              |           | 5/5           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A7   |
+| +++A8              |           | 3/3           | 0/0           | 4/4           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A8   |
+| +++A9              |           | 5/5           | 0/0           | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/a2/m0/A9   |
+| +c1                |           | 8/8           | 0/0           | 9/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/c1         |
+| +d1                |           | 20/20         | 31/31         | 17/17         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/d1         |
+| +m1                |           | 0/0           | 0/0           | 0/0           | 0/0           | 1/1       | 0/0       | 0/0   | 0/0   | mul_CPU/m1         |
+| +m6                |           | 25/25         | 0/0           | 34/34         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/m6         |
+| +m7                |           | 32/32         | 0/0           | 58/58         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/m7         |
+| +mu0               |           | 1/1           | 0/0           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/mu0        |
+| +mu1               |           | 5/5           | 0/0           | 9/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/mu1        |
+| +mu2               |           | 3/3           | 0/0           | 5/5           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/mu2        |
+| +mu3               |           | 17/17         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/mu3        |
+| +mu4               |           | 27/27         | 0/0           | 32/32         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/mu4        |
+| +p1                |           | 7/20          | 8/25          | 6/13          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/p1         |
+| ++m0               |           | 13/13         | 17/17         | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/p1/m0      |
+| +p2                |           | 9/22          | 10/27         | 6/13          | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/p2         |
+| ++m0               |           | 13/13         | 17/17         | 7/7           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/p2/m0      |
+| +pp1               |           | 27/27         | 32/32         | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/pp1        |
+| +r1                |           | 1287/1287     | 992/992       | 1575/1575     | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/r1         |
+| +s1                |           | 2/2           | 4/4           | 0/0           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/s1         |
+| +s2                |           | 10/10         | 4/4           | 20/20         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/s2         |
+| +t1                |           | 23/23         | 33/33         | 9/9           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | mul_CPU/t1         |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

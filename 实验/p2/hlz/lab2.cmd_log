@@ -1,0 +1,26 @@
+xst -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -ifn "D:/3120102116/p2/hlz/lab2.xst" -ofn "D:/3120102116/p2/hlz/lab2.syr"
+ngdbuild -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "lab2.ngc" lab2.ngd
+map -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o lab2_map.ncd lab2.ngd lab2.pcf
+par -ise "D:/3120102116/p2/hlz/hlz.ise" -w -intstyle ise -ol std -t 1 lab2_map.ncd lab2.ncd lab2.pcf
+trce -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -e 3 -s 4 -xml lab2 lab2.ncd -o lab2.twr lab2.pcf -ucf lab2.ucf
+bitgen -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -f lab2.ut lab2.ncd
+xst -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -ifn "D:/3120102116/p2/hlz/lab2.xst" -ofn "D:/3120102116/p2/hlz/lab2.syr"
+ngdbuild -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "lab2.ngc" lab2.ngd
+map -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o lab2_map.ncd lab2.ngd lab2.pcf
+par -ise "D:/3120102116/p2/hlz/hlz.ise" -w -intstyle ise -ol std -t 1 lab2_map.ncd lab2.ncd lab2.pcf
+trce -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -e 3 -s 4 -xml lab2 lab2.ncd -o lab2.twr lab2.pcf -ucf lab2.ucf
+bitgen -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -f lab2.ut lab2.ncd
+xst -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -ifn "D:/3120102116/p2/hlz/lab2.xst" -ofn "D:/3120102116/p2/hlz/lab2.syr"
+ngdbuild -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "lab2.ngc" lab2.ngd
+map -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o lab2_map.ncd lab2.ngd lab2.pcf
+par -ise "D:/3120102116/p2/hlz/hlz.ise" -w -intstyle ise -ol std -t 1 lab2_map.ncd lab2.ncd lab2.pcf
+trce -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -e 3 -s 4 -xml lab2 lab2.ncd -o lab2.twr lab2.pcf -ucf lab2.ucf
+bitgen -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -f lab2.ut lab2.ncd
+xst -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -ifn "D:/3120102116/p2/hlz/lab2.xst" -ofn "D:/3120102116/p2/hlz/lab2.syr"
+xst -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -ifn "D:/3120102116/p2/hlz/lab2.xst" -ofn "D:/3120102116/p2/hlz/lab2.syr"
+xst -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -ifn "D:/3120102116/p2/hlz/lab2.xst" -ofn "D:/3120102116/p2/hlz/lab2.syr"
+ngdbuild -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "lab2.ngc" lab2.ngd
+map -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o lab2_map.ncd lab2.ngd lab2.pcf
+par -ise "D:/3120102116/p2/hlz/hlz.ise" -w -intstyle ise -ol std -t 1 lab2_map.ncd lab2.ncd lab2.pcf
+trce -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -e 3 -s 4 -xml lab2 lab2.ncd -o lab2.twr lab2.pcf -ucf lab2.ucf
+bitgen -ise "D:/3120102116/p2/hlz/hlz.ise" -intstyle ise -f lab2.ut lab2.ncd

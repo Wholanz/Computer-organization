@@ -1,0 +1,5 @@
+verilog work "adder_16bits.v"
+verilog work "display.v"
+verilog work "aluc.v"
+verilog work "alu.v"
+verilog work "hlz.v"

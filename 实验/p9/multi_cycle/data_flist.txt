@@ -1,0 +1,12 @@
+# Output products list for <data>
+data.asy
+data.mif
+data.ngc
+data.sym
+data.v
+data.veo
+data.vhd
+data.vho
+data.xco
+data_flist.txt
+data_xmdf.tcl

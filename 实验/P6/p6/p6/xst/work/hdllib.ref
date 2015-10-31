@@ -1,0 +1,6 @@
+MO adder_1bit NULL adder_32bits.v vlg53/adder__1bit.bin 1397214201
+MO aluc NULL aluc.v vlg15/aluc.bin 1397214201
+MO top NULL top.v vlg6F/top.bin 1397214201
+MO adder_32bits NULL adder_32bits.v vlg0E/adder__32bits.bin 1397214201
+MO RegFile NULL RegFile.v vlg32/_reg_file.bin 1397214201
+MO alu NULL alu.v vlg0A/alu.bin 1397214201

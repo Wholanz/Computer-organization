@@ -1,0 +1,98 @@
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd
+xst -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.xst" -ofn "C:/Users/student/Desktop/p4_divider/p4_dividor/top.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "top.ngc" top.ngd
+map -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o top_map.ncd top.ngd top.pcf
+par -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+trce -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -e 3 -s 4 -xml top top.ncd -o top.twr top.pcf -ucf divider.ucf
+bitgen -ise "C:/Users/student/Desktop/p4_divider/p4_dividor/p4_dividor.ise" -intstyle ise -f top.ut top.ncd

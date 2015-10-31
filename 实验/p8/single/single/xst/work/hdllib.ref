@@ -1,0 +1,17 @@
+MO adder_32bits NULL adder_32bits.v vlg0E/adder__32bits.bin 1400227663
+MO mux_5 NULL mux_5.v vlg06/mux__5.bin 1400227663
+MO display NULL display.v vlg1E/display.bin 1400227663
+MO adder_1bit NULL adder_32bits.v vlg53/adder__1bit.bin 1400227663
+MO single_pc NULL single_pc.v vlg10/single__pc.bin 1400227663
+MO CPU NULL CPU.v vlg70/_c_p_u.bin 1400227663
+MO timer_1ms NULL pbdebounce.v vlg39/timer__1ms.bin 1400227663
+MO aluc NULL aluc.v vlg15/aluc.bin 1400227663
+MO mux_32 NULL mux_32.v vlg46/mux__32.bin 1400227663
+MO single_gpr NULL single_gpr.v vlg22/single__gpr.bin 1400227663
+MO pbdebounce NULL pbdebounce.v vlg6F/pbdebounce.bin 1400227663
+MO branch_addr NULL branch_addr.v vlg5C/branch__addr.bin 1400227663
+MO single_pc_plus_4 NULL single_pc_plus_4.v vlg6E/single__pc__plus__4.bin 1400227663
+MO control NULL control.v vlg61/control.bin 1400227663
+MO inst NULL inst.v vlg36/inst.bin 1400227663
+MO data NULL ./data.v vlg72/data.bin 1400227663
+MO alu NULL alu.v vlg0A/alu.bin 1400227663

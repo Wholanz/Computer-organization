@@ -1,0 +1,47 @@
+Command line:
+   ./tester_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  2776
+WARNING:Simulator:678 -  For instance uut/mu2/, width 5 of formal port C is not
+   equal to width 32 of actual signal implSig4.
+WARNING:Simulator:678 -  For instance uut/mu2/, width 5 of formal port D is not
+   equal to width 32 of actual signal implSig5.
+WARNING:Simulator:679 -  For instance uut/m7/, width 32 of formal port C is not
+   equal to width 26 of actual variable inst_reg. 
+
+Mon Jun 09 22:19:27 2014
+
+Total Line Count : 832
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 182.612 Meg
+
+ Total Signals          : 537
+ Total Nets             : 1510
+ Total Signal Drivers   : 325
+ Total Blocks           : 63
+ Total Primitive Blocks : 50
+ Total Processes        : 396
+ Total Traceable Variables  : 232
+ Total Scalar Nets and Variables : 40060
+ntrace select -o on -n /tester/led 
+ntrace select -o on -n /tester/segment 
+ntrace select -o on -n /tester/anode 
+ntrace select -o on -n /tester/clk 
+ntrace select -o on -n /tester/exec 
+ntrace select -o on -n /tester/rst 
+ntrace select -o on -n /tester/disp_type 
+ntrace select -o on -n /tester/reg_index 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.0624 sec
+
+ Current Memory Usage: 197.554 Meg
+
+Mon Jun 09 22:20:31 2014
+

@@ -1,0 +1,1 @@
+xst -ise "C:/Users/student/Desktop/single/single/single.ise" -intstyle ise -ifn "C:/Users/student/Desktop/single/single/adder_32bits.xst" -ofn "C:/Users/student/Desktop/single/single/adder_32bits.syr"

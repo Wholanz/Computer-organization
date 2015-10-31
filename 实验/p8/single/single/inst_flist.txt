@@ -1,0 +1,12 @@
+# Output products list for <inst>
+inst.asy
+inst.mif
+inst.ngc
+inst.sym
+inst.v
+inst.veo
+inst.vhd
+inst.vho
+inst.xco
+inst_flist.txt
+inst_xmdf.tcl

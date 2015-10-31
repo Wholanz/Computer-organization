@@ -1,0 +1,17 @@
+F:/xilinx/10.1/ISE/verilog/src/glbl.v
+C:/Users/vaio/Desktop/p9/multi_cycle/display.v
+C:/Users/vaio/Desktop/p9/multi_cycle/mux_5.v
+C:/Users/vaio/Desktop/p9/multi_cycle/mux_32.v
+C:/Users/vaio/Desktop/p9/multi_cycle/adder_32bits.v
+C:/Users/vaio/Desktop/p9/multi_cycle/alu.v
+C:/Users/vaio/Desktop/p9/multi_cycle/aluc.v
+C:/Users/vaio/Desktop/p9/multi_cycle/regfile.v
+C:/Users/vaio/Desktop/p9/multi_cycle/control.v
+C:/Users/vaio/Desktop/p9/multi_cycle/state_control.v
+C:/Users/vaio/Desktop/p9/multi_cycle/state.v
+C:/Users/vaio/Desktop/p9/multi_cycle/pc.v
+C:/Users/vaio/Desktop/p9/multi_cycle/timer_1s.v
+K:/IP0_K.14/env/Databases/ip/export/rtf/verilog/src/XilinxCoreLib/BLKMEMDP_V6_3.v
+C:/Users/vaio/Desktop/p9/multi_cycle/pbdebounce.v
+C:/Users/vaio/Desktop/p9/multi_cycle/mul_CPU.v
+C:/Users/vaio/Desktop/p9/multi_cycle/tester.v

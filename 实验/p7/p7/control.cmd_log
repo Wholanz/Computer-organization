@@ -1,0 +1,15 @@
+xst -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p7/p7/control.xst" -ofn "C:/Users/student/Desktop/p7/p7/control.syr"
+xst -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p7/p7/control.xst" -ofn "C:/Users/student/Desktop/p7/p7/control.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "control.ngc" control.ngd
+map -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o control_map.ncd control.ngd control.pcf
+par -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -w -intstyle ise -ol std -t 1 control_map.ncd control.ncd control.pcf
+trce -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -e 3 -s 4 -xml control control.ncd -o control.twr control.pcf -ucf p7_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -f control.ut control.ncd
+xst -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p7/p7/control.xst" -ofn "C:/Users/student/Desktop/p7/p7/control.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "control.ngc" control.ngd
+map -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr off -k 4 -c 100 -o control_map.ncd control.ngd control.pcf
+par -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -w -intstyle ise -ol std -t 1 control_map.ncd control.ncd control.pcf
+trce -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -e 3 -s 4 -xml control control.ncd -o control.twr control.pcf -ucf p7_ucf.ucf
+bitgen -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -f control.ut control.ncd
+xst -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -ifn "C:/Users/student/Desktop/p7/p7/control.xst" -ofn "C:/Users/student/Desktop/p7/p7/control.syr"
+ngdbuild -ise "C:/Users/student/Desktop/p7/p7/p7.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s200-ft256-4 "control.ngc" control.ngd

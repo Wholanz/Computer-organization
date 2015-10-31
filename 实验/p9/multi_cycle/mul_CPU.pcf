@@ -1,0 +1,43 @@
+//! **************************************************************************
+// Written by: Map K.31 on Mon Jun 16 16:12:05 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "reg_index<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "reg_index<1>" LOCATE = SITE "G12" LEVEL 1;
+COMP "reg_index<2>" LOCATE = SITE "H14" LEVEL 1;
+COMP "reg_index<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "reg_index<4>" LOCATE = SITE "J14" LEVEL 1;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "rst" LOCATE = SITE "M14" LEVEL 1;
+PIN rst_pin<0> = BEL "rst" PINNAME PAD;
+PIN "rst_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "segment<0>" LOCATE = SITE "E14" LEVEL 1;
+COMP "segment<1>" LOCATE = SITE "G13" LEVEL 1;
+COMP "segment<2>" LOCATE = SITE "N15" LEVEL 1;
+COMP "segment<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "segment<4>" LOCATE = SITE "R16" LEVEL 1;
+COMP "segment<5>" LOCATE = SITE "F13" LEVEL 1;
+COMP "segment<6>" LOCATE = SITE "N16" LEVEL 1;
+COMP "segment<7>" LOCATE = SITE "P16" LEVEL 1;
+COMP "exec" LOCATE = SITE "M13" LEVEL 1;
+PIN exec_pin<0> = BEL "exec" PINNAME PAD;
+PIN "exec_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "mode" LOCATE = SITE "K13" LEVEL 1;
+COMP "anode<0>" LOCATE = SITE "D14" LEVEL 1;
+COMP "anode<1>" LOCATE = SITE "G14" LEVEL 1;
+COMP "anode<2>" LOCATE = SITE "F14" LEVEL 1;
+COMP "anode<3>" LOCATE = SITE "E13" LEVEL 1;
+COMP "disp_type<0>" LOCATE = SITE "J13" LEVEL 1;
+COMP "disp_type<1>" LOCATE = SITE "K14" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "K12" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "P14" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "L12" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "N14" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "P13" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "N12" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "P12" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "P11" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

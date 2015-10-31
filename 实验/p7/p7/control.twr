@@ -1,0 +1,110 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Users/student/Desktop/p7/p7/p7.ise -intstyle ise -e 3 -s 4 -xml control
+control.ncd -o control.twr control.pcf -ucf p7_ucf.ucf
+
+Design file:              control.ncd
+Physical constraint file: control.pcf
+Device,package,speed:     xc3s200,ft256,-4 (PRODUCTION 1.39 2008-01-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+op<0>          |ALUop0         |   10.442|
+op<0>          |ALUop1         |   11.503|
+op<0>          |ALUsrcB        |   10.833|
+op<0>          |Branch         |   10.919|
+op<0>          |MemToReg       |   11.053|
+op<0>          |MemWrite       |   10.152|
+op<0>          |RegDst         |   11.963|
+op<0>          |WriteReg       |   11.842|
+op<0>          |anode          |   10.891|
+op<0>          |dot            |   11.061|
+op<1>          |ALUop0         |    9.929|
+op<1>          |ALUop1         |   10.990|
+op<1>          |ALUsrcB        |   10.745|
+op<1>          |Branch         |   10.406|
+op<1>          |MemToReg       |   10.965|
+op<1>          |MemWrite       |   10.064|
+op<1>          |RegDst         |   11.450|
+op<1>          |WriteReg       |   11.754|
+op<1>          |anode          |   10.818|
+op<1>          |dot            |   10.988|
+op<2>          |ALUop0         |    8.892|
+op<2>          |ALUop1         |   10.029|
+op<2>          |ALUsrcB        |   10.615|
+op<2>          |Branch         |    9.369|
+op<2>          |MemToReg       |   10.835|
+op<2>          |MemWrite       |    9.934|
+op<2>          |RegDst         |   10.489|
+op<2>          |WriteReg       |   11.624|
+op<2>          |anode          |   10.597|
+op<2>          |dot            |   10.767|
+op<3>          |ALUop0         |    9.988|
+op<3>          |ALUop1         |   11.049|
+op<3>          |Branch         |   10.465|
+op<3>          |MemToReg       |    9.725|
+op<3>          |MemWrite       |    8.782|
+op<3>          |RegDst         |   11.509|
+op<3>          |WriteReg       |   11.086|
+op<3>          |anode          |    9.348|
+op<3>          |dot            |    9.518|
+op<4>          |ALUop0         |    9.612|
+op<4>          |ALUop1         |   10.673|
+op<4>          |ALUsrcB        |   10.019|
+op<4>          |Branch         |   10.089|
+op<4>          |MemToReg       |   10.239|
+op<4>          |MemWrite       |    9.338|
+op<4>          |RegDst         |   11.133|
+op<4>          |WriteReg       |   11.028|
+op<4>          |anode          |    8.945|
+op<4>          |dot            |    9.115|
+op<5>          |ALUop0         |    9.266|
+op<5>          |ALUop1         |   10.327|
+op<5>          |ALUsrcB        |    9.969|
+op<5>          |Branch         |    9.743|
+op<5>          |MemToReg       |   10.189|
+op<5>          |MemWrite       |    9.288|
+op<5>          |RegDst         |   10.787|
+op<5>          |WriteReg       |   10.978|
+op<5>          |anode          |    8.804|
+op<5>          |dot            |    8.974|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Apr 15 11:32:23 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 105 MB
+
+
+

@@ -1,0 +1,539 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/student/Desktop/p3/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/student/Desktop/p3/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: hlz.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "hlz.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "hlz"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : hlz
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : hlz.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "adder_16bits.v" in library work
+Module <adder_32bits> compiled
+Compiling verilog file "display.v" in library work
+Module <adder_1bit> compiled
+Compiling verilog file "aluc.v" in library work
+Module <display> compiled
+Compiling verilog file "alu.v" in library work
+Module <aluc> compiled
+Compiling verilog file "hlz.v" in library work
+Module <alu> compiled
+Module <hlz> compiled
+No errors in compilation
+Analysis of file <"hlz.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <hlz> in library <work>.
+
+Analyzing hierarchy for module <display> in library <work>.
+
+Analyzing hierarchy for module <alu> in library <work>.
+
+Analyzing hierarchy for module <aluc> in library <work>.
+
+Analyzing hierarchy for module <adder_32bits> in library <work> with parameters.
+	size = "00000000000000000000000000100000"
+
+Analyzing hierarchy for module <adder_1bit> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <hlz>.
+Module <hlz> is correct for synthesis.
+ 
+Analyzing module <display> in library <work>.
+Module <display> is correct for synthesis.
+ 
+Analyzing module <alu> in library <work>.
+WARNING:Xst:883 - "alu.v" line 43: Ignored duplicate item in case statement. 
+WARNING:Xst:883 - "alu.v" line 44: Ignored duplicate item in case statement. 
+Module <alu> is correct for synthesis.
+ 
+Analyzing module <adder_32bits> in library <work>.
+	size = 32'sb00000000000000000000000000100000
+Module <adder_32bits> is correct for synthesis.
+ 
+Analyzing module <adder_1bit> in library <work>.
+Module <adder_1bit> is correct for synthesis.
+ 
+Analyzing module <aluc> in library <work>.
+Module <aluc> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <display>.
+    Related source file is "display.v".
+    Found 16x8-bit ROM for signal <segment$mux0000> created at line 50.
+    Found 4-bit register for signal <anode>.
+    Found 8-bit register for signal <segment>.
+    Found 1-of-4 decoder for signal <anode$mux0000> created at line 32.
+    Found 4-bit register for signal <code>.
+    Found 4-bit 4-to-1 multiplexer for signal <code$mux0000> created at line 32.
+    Found 16-bit up counter for signal <count>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <display> synthesized.
+
+
+Synthesizing Unit <aluc>.
+    Related source file is "aluc.v".
+WARNING:Xst:646 - Signal <result3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <or_result2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <aluc> synthesized.
+
+
+Synthesizing Unit <adder_1bit>.
+    Related source file is "adder_16bits.v".
+    Found 1-bit xor3 for signal <s>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <adder_1bit> synthesized.
+
+
+Synthesizing Unit <adder_32bits>.
+    Related source file is "adder_16bits.v".
+    Found 1-bit xor2 for signal <Bo$xor0000> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0001> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0002> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0003> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0004> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0005> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0006> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0007> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0008> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0009> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0010> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0011> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0012> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0013> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0014> created at line 31.
+    Found 1-bit xor2 for signal <Bo$xor0015> created at line 31.
+Unit <adder_32bits> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "alu.v".
+WARNING:Xst:646 - Signal <co> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit comparator less for signal <disp_code$cmp_lt0000> created at line 47.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <hlz>.
+    Related source file is "hlz.v".
+WARNING:Xst:653 - Signal <op2> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000011001101000100.
+WARNING:Xst:653 - Signal <op1> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000001000100100010.
+Unit <hlz> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 3
+ 4-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+# Xors                                                 : 48
+ 1-bit xor2                                            : 16
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx\10.1\ISE.
+
+Synthesizing (advanced) Unit <display>.
+INFO:Xst - In order to maximize performance and save block RAM resources, the small ROM <Mrom_segment_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <display> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+# Xors                                                 : 48
+ 1-bit xor2                                            : 16
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <segment_7> (without init value) has a constant value of 1 in block <display>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <hlz> ...
+
+Optimizing unit <display> ...
+
+Optimizing unit <adder_32bits> ...
+
+Optimizing unit <alu> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block hlz, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : hlz.ngr
+Top Level Output File Name         : hlz
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 88
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 15
+#      LUT2                        : 2
+#      LUT3                        : 10
+#      LUT4                        : 22
+#      MUXCY                       : 15
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 15
+# FlipFlops/Latches                : 31
+#      FD                          : 28
+#      FDS                         : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 9
+#      OBUF                        : 13
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       27  out of   1920     1%  
+ Number of Slice Flip Flops:             31  out of   3840     0%  
+ Number of 4 input LUTs:                 52  out of   3840     1%  
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    173    13%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 31    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.850ns (Maximum Frequency: 206.186MHz)
+   Minimum input arrival time before clock: 11.774ns
+   Maximum output required time after clock: 7.165ns
+   Maximum combinational path delay: 12.903ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.850ns (frequency: 206.186MHz)
+  Total number of paths / destination ports: 178 / 34
+-------------------------------------------------------------------------
+Delay:               4.850ns (Levels of Logic = 16)
+  Source:            M3/count_1 (FF)
+  Destination:       M3/count_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: M3/count_1 to M3/count_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.720   1.140  M3/count_1 (M3/count_1)
+     LUT1:I0->O            1   0.551   0.000  M3/Mcount_count_cy<1>_rt (M3/Mcount_count_cy<1>_rt)
+     MUXCY:S->O            1   0.500   0.000  M3/Mcount_count_cy<1> (M3/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  M3/Mcount_count_cy<2> (M3/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  M3/Mcount_count_cy<3> (M3/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  M3/Mcount_count_cy<4> (M3/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  M3/Mcount_count_cy<5> (M3/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  M3/Mcount_count_cy<6> (M3/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  M3/Mcount_count_cy<7> (M3/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  M3/Mcount_count_cy<8> (M3/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  M3/Mcount_count_cy<9> (M3/Mcount_count_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  M3/Mcount_count_cy<10> (M3/Mcount_count_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  M3/Mcount_count_cy<11> (M3/Mcount_count_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  M3/Mcount_count_cy<12> (M3/Mcount_count_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  M3/Mcount_count_cy<13> (M3/Mcount_count_cy<13>)
+     MUXCY:CI->O           0   0.064   0.000  M3/Mcount_count_cy<14> (M3/Mcount_count_cy<14>)
+     XORCY:CI->O           1   0.904   0.000  M3/Mcount_count_xor<15> (M3/Result<15>)
+     FD:D                      0.203          M3/count_15
+    ----------------------------------------
+    Total                      4.850ns (3.710ns logic, 1.140ns route)
+                                       (76.5% logic, 23.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 236 / 4
+-------------------------------------------------------------------------
+Offset:              11.774ns (Levels of Logic = 8)
+  Source:            button<1> (PAD)
+  Destination:       M3/code_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: button<1> to M3/code_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.821   1.463  button_1_IBUF (button_1_IBUF)
+     LUT3:I0->O            5   0.551   1.260  M2/control_1_or000011 (N7)
+     LUT4:I0->O            7   0.551   1.134  M2/control_2_or00001 (control<2>)
+     LUT3:I2->O            4   0.551   1.256  M2/control_1_or00001 (control<1>)
+     LUT3:I0->O            3   0.551   1.102  disp_num<7>_SW0 (N8)
+     LUT4:I1->O            1   0.551   0.869  disp_num<4> (disp_num<3>)
+     LUT3:I2->O            1   0.551   0.000  M3/Mmux_code_mux0000_4 (M3/Mmux_code_mux0000_4)
+     MUXF5:I0->O           1   0.360   0.000  M3/Mmux_code_mux0000_2_f5 (M3/code_mux0000<0>)
+     FD:D                      0.203          M3/code_0
+    ----------------------------------------
+    Total                     11.774ns (4.690ns logic, 7.084ns route)
+                                       (39.8% logic, 60.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            M3/anode_3 (FF)
+  Destination:       anode<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: M3/anode_3 to anode<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.720   0.801  M3/anode_3 (M3/anode_3)
+     OBUF:I->O                 5.644          anode_3_OBUF (anode<3>)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 15 / 1
+-------------------------------------------------------------------------
+Delay:               12.903ns (Levels of Logic = 5)
+  Source:            button<1> (PAD)
+  Destination:       o_zf (PAD)
+
+  Data Path: button<1> to o_zf
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.821   1.463  button_1_IBUF (button_1_IBUF)
+     LUT3:I0->O            5   0.551   1.260  M2/control_1_or000011 (N7)
+     LUT4:I0->O            7   0.551   1.261  M2/control_2_or00001 (control<2>)
+     LUT4:I1->O            1   0.551   0.801  M1/o_zf2141 (M1/o_zf2141)
+     OBUF:I->O                 5.644          o_zf_OBUF (o_zf)
+    ----------------------------------------
+    Total                     12.903ns (8.118ns logic, 4.785ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.13 secs
+ 
+--> 
+
+Total memory usage is 180016 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
